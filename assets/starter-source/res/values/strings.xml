@@ -1,0 +1,3 @@
+<resources>
+    <string name="service_description">仅在启动或小米桌面切换时检查过滤连接，并启动已安装的过滤工具。不读取屏幕文字、通知或按键，无联网权限。</string>
+</resources>

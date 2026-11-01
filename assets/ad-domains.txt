@@ -1,0 +1,16 @@
+# 案例验证使用的规则起点，不保证所有平台通用。
+cupid.ptqy.gitv.tv
+cupid.iqiyi.com
+afp.qiyi.com
+ckm.iqiyi.com
+afdback.ptqy.gitv.tv
+api.ad.xiaomi.com
+ad.mi.com
+da.mgtv.com
+qtsftl.m.cn.miaozhen.com
+v2.reachmax.cn
+# 云视听极光独立应用：配置/监测、开屏取单、视频广告取单。
+dp3.play.aiseet.atianqi.com
+p-l.play.aiseet.atianqi.com
+news-l.play.aiseet.atianqi.com
+lives.l.aiseet.atianqi.com

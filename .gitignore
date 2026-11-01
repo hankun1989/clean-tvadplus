@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.pyc
+work/
+runtime/
+*.apk
+!assets/电视过滤启动助手_0.1.0.apk
+*.log
+tv-filter.yaml
+tv-ad-filter.yaml
+controller-secret
+*.p12
+*.jks
+signing-private.json
+starter-recovery.json
+build/
