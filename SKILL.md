@@ -7,11 +7,11 @@ description: 为老款小米电视部署已实测的视频广告过滤与开机�
 
 按本仓库最终成功方案执行：**官方 CMFA + 完整 14 条规则 + 最小启动助手 + 必要时经单独授权处理旧广告缓存 + 实际重启验收**。同类已确认设备直接使用完整方案，不拆成试验性半套配置反复尝试。
 
-实测环境：2018 年 MiTV4A / Android 6.0.1 / armeabi-v7a / PatchWall 3.50.1621。兼容工具和验收范围见 [最终验证](references/evidence.md)。其他固件先核对兼容性，不把本例视为全机型保证。
+实测环境：2018 年 MiTV4A / Android 6.0.1 / armeabi-v7a / PatchWall 3.50.1621。兼容工具和验收范围见 [最终验证](references/evidence.md)。其他固件先阅读 [兼容性评估](references/compatibility.md)，按实际系统和 CPU 选择路径；当前助手 0.1.0 不满足 Android 15 的普通首次安装门槛，不将老机型全套直接用于所有电视。
 
 ## 执行顺序
 
-1. 明确用户授权的单台电视、系统/CPU、实际入口、原有 VPN 和恢复依据。已有材料和授权直接沿用。
+1. 明确用户授权的单台电视、系统 API/CPU、实际入口、原有 VPN 和恢复依据；新款/其他品牌先执行兼容性门槛检查。已有材料和授权直接沿用。
 2. 按 [安装工作流](references/workflow.md) 获取核验后的官方 CMFA，在电视本机使用连接过滤与 HTTP/TLS 域名识别。正常内容走 DIRECT，不需要代理订阅，保留原桌面。
 3. 用 `scripts/make_profile.py` 一次生成 `assets/ad-domains.txt` 中完整的最终规则；运行配置含随机口令，仅留本地。
 4. 用 `scripts/transfer_profile.py` 经回环地址与所选设备的 ADB reverse 导入；保存、激活，并从主界面完成首次系统 VPN 确认。
