@@ -1,4 +1,4 @@
 interface:
-  display_name: "老款小米电视去广告"
+  display_name: "Clean TVAdPlus"
   short_description: "排查并过滤老款小米电视片头广告，保留原桌面，处理自带 DNS 绕过和启动恢复。"
-  default_prompt: "使用 $legacy-xiaomi-tv-adblock 排查我的老款小米电视长片头广告，保留原桌面并验证播放与重启恢复。"
+  default_prompt: "使用 $clean-tvadplus 排查我的老款小米电视长片头广告，保留原桌面并验证播放与重启恢复。"

@@ -1,4 +1,4 @@
-# 老款小米电视去广告 Skill
+# Clean TVAdPlus · 电视广告过滤 Skill
 
 适用于 Codex、Qoder 等支持 `SKILL.md` 的 Agent。基于 **2018 年 MiTV4A / Android 6.0.1** 实机排查：保留原小米桌面，在电视本机过滤广告连接，处理视频 SDK 自带解析绕过普通 DNS，以及老固件重启后过滤不恢复的问题。
 
@@ -26,15 +26,15 @@
 Codex：
 
 ```sh
-git clone https://github.com/hankun1989/legacy-xiaomi-tv-adblock.git \
-  ~/.codex/skills/legacy-xiaomi-tv-adblock
+git clone https://github.com/hankun1989/clean-tvadplus.git \
+  ~/.codex/skills/clean-tvadplus
 ```
 
-Qoder 可放入其用户 Skill 目录，如 `~/.qoder/skills/legacy-xiaomi-tv-adblock`。目录已存在时先核对，不覆盖用户修改，再刷新 Agent 的 Skill 列表。
+Qoder 可放入其用户 Skill 目录，如 `~/.qoder/skills/clean-tvadplus`。目录已存在时先核对，不覆盖用户修改，再刷新 Agent 的 Skill 列表。
 
 示例请求：
 
-> 使用 $legacy-xiaomi-tv-adblock 排查我的老款小米电视广告，保留原桌面，分别验证桌面和独立应用，并测试完整重启后自动恢复。
+> 使用 $clean-tvadplus 排查我的老款小米电视广告，保留原桌面，分别验证桌面和独立应用，并测试完整重启后自动恢复。
 
 安装 Skill 只增加指引、脚本和可审阅资源，不会自动连接或修改电视。
 
